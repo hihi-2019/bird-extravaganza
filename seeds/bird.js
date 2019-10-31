@@ -23,11 +23,12 @@ exports.seed = function(knex) {
         },
         {
           bird_id: 3,
-          bird_name: 'Macaroni Penguin',
+          bird_name: 'Hihi',
           votes: 0,
           blurb:
-            'Macaroni penguins spend six months at sea while foraging for fish, crustaceans, and squid.',
-          image: 'macaroniPenguin.jpeg'
+            'To Māori, hihi was a term used for the healing rays of sunlight. The shoulders of the male hihi would light up in a burst of yellow as these birds darted through the trees and were said to be carriers of the sun - capturing the healing rays and spreading light through the forest.',
+          image: 'hihi.jpeg'
+
         },
         {
           bird_id: 4,
