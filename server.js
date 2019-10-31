@@ -22,4 +22,9 @@ server.get('/birdProfile', (req, res) => {
   res.send(birdProfile)
   })
 
+server.get('/voterProfile/:id', (req, res) => {
+  let {id} = req.params
+  res.render('voterProfile', {})
+  })
+
 module.exports = server;
