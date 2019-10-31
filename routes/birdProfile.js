@@ -9,7 +9,7 @@ router.get('/:id', (req, res) => {
   db.getBird(id)
   .then(data => {
       
-      console.log(data[0])
+      console.log(data[0].bird_name)
       res.render('birdProfile', data[0])
     })
     

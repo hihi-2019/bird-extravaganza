@@ -11,7 +11,7 @@ exports.seed = function(knex) {
           votes: 0,
           blurb:
             'The kakapo is a large, nocturnal, flightless, lek-breeding parrot – a real oddity. It is also critically endangered.',
-          image: 'kakapo.jpeg'
+          image: 'kakapo.jpeg',
         },
         {
           bird_id: 2,
@@ -19,7 +19,7 @@ exports.seed = function(knex) {
           votes: 0,
           blurb:
             'boisterous, medium-sized, common and widespread bird of forest and suburbia – unless you live in Canterbury',
-          image: 'tui.jpeg'
+          image: 'tui.jpeg',
         },
         {
           bird_id: 3,
