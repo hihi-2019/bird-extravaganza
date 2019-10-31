@@ -11,7 +11,7 @@ exports.seed = function(knex) {
           votes: 0,
           blurb:
             'The kakapo is a large, nocturnal, flightless, lek-breeding parrot – a real oddity. It is also critically endangered.',
-          image: ''
+          image: 'kakapo.jpeg'
         },
         {
           bird_id: 2,
@@ -19,7 +19,7 @@ exports.seed = function(knex) {
           votes: 0,
           blurb:
             'boisterous, medium-sized, common and widespread bird of forest and suburbia – unless you live in Canterbury',
-          image: ''
+          image: 'tui.jpeg'
         },
         {
           bird_id: 3,
@@ -27,7 +27,7 @@ exports.seed = function(knex) {
           votes: 0,
           blurb:
             'Macaroni penguins spend six months at sea while foraging for fish, crustaceans, and squid.',
-          image: ''
+          image: 'macaroniPenguin.jpeg'
         },
         {
           bird_id: 4,
@@ -35,7 +35,7 @@ exports.seed = function(knex) {
           votes: 0,
           blurb:
             'Largest bird on Sesame Street. Best friend is Snuffleupagus. He can roller skate, ice skate, dance, swim, sing, write poetry, draw, and even ride a unicycle.',
-          image: ''
+          image: 'bigBird.jpeg'
         },
         {
           bird_id: 5,
@@ -43,7 +43,7 @@ exports.seed = function(knex) {
           votes: 0,
           blurb:
             'The red-billed gull is the commonest gull on the New Zealand coast. A real wildcard',
-          image: ''
+          image: 'seagull.jpeg'
         },
         {
           bird_id: 6,
@@ -51,7 +51,7 @@ exports.seed = function(knex) {
           votes: 0,
           blurb:
             'Known for its friendly ‘cheet cheet’ call and energetic flying antics, the aptly named fantail. In Māori mythology the fantail was responsible for the presence of death in the world.',
-          image: ''
+          image: 'piwakawaka.jpeg'
         },
         {
           bird_id: 7,
@@ -59,7 +59,7 @@ exports.seed = function(knex) {
           votes: 0,
           blurb:
             'Often heard before it is seen, the kererū has been known to fall out of the odd tree after too much fermented fruit.',
-          image: ''
+          image: 'kereru.jpeg'
         },
         {
           bird_id: 8,
@@ -67,7 +67,7 @@ exports.seed = function(knex) {
           votes: 0,
           blurb:
             'It eats fish, shellfish, crabs and amphibians, catching its prey by making a side-to-side movement with its bill. The end of the bill of the royal spoonbill is broader and works more like a pair of tongs.',
-          image: ''
+          image: 'royalSpoonbill.jpeg'
         }
       ])
     });
