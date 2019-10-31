@@ -1,0 +1,54 @@
+*, html {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://wallpapercave.com/wp/qjsfWP4.jpg");
+  background-size: 100%;
+ 
+}
+
+h1{
+color: white;
+font-size: 5rem;
+
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.birdcard {
+  width: 22%;
+  margin: 1% 1%;
+  padding: 2%;
+  background-color: white;
+}
+
+.profilecard {
+  width: 50%;
+  margin: 1% 1%;
+  padding: 2%;
+  background-color: white;
+}
+
+.leaderboard {
+  padding: 0 25%;
+}
+
+.leaderboardCard {
+  width: 100%;
+  margin: 1% 1%;
+  padding: 2%;
+  background-color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+hiddenForm {
+  visibility: hidden;
+}
