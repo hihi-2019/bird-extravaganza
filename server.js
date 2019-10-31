@@ -5,6 +5,7 @@ const server = express()
 const birdProfile = require('./routes/birdProfile')
 const voterProfile = require('./routes/voterProfile')
 const leaderboard = require('./routes/leaderboard')
+const db = require('./db')
 
 server.engine('hbs', hbs({
   defaultLayout: 'main',
@@ -19,7 +20,16 @@ server.use('/voterProfile', voterProfile)
 server.use('/leaderboard', leaderboard)
 
 server.get('/', (req, res) => {
-  res.render('birdIndex',{})
+  db.getBirds()
+    .then(birds => {
+      const data = {
+        birds: birds
+      }
+      console.log(data)
+    res.render('birdIndex', data)
+    }
+    )
+
   })
 
 server.get('/birdProfile', (req, res) => {
