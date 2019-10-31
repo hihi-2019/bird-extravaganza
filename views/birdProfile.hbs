@@ -1,6 +1,22 @@
 <h1>Check out the {{bird_name}}</h1>
- <img src="{{image}}" alt="a picture of a bird">
+ <img src="../public/image/{{image}}" alt="a picture of a bird">
  <p>
-   Bird Blurb: {{blurb}}
-  </p>
+    Bird Blurb: {{blurb}}
+ </p>
  <h4>Total Votes: {{votes}}</h4> 
+ <submit type="submit">Add a vote</submit>
+
+ <form class="hidden" action="/addvoter" method="POST">
+ <h2>Vote for your favourite bird</h2>
+    <p>
+      Name: <input type="text">
+    </p>
+    <p>
+      Quote: <input type="text">
+    </p>
+    <p>
+      Bird: <input type="text" value="{{bird_name}}">
+    </p>
+    <submit type="submit">Vote</submit>
+ </form>
+
