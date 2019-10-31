@@ -24,14 +24,25 @@ font-size: 5rem;
   width: 22%;
   margin: 1% 1%;
   padding: 2%;
-  background-color: white;
+  background-color: #2ea745;
+  color: white;
+}
+
+
+
+
+.birdcard img {
+  /* border-radius: 50%; */
 }
 
 .profilecard {
   width: 50%;
   margin: 1% 1%;
   padding: 2%;
-  background-color: white;
+  background-color: #2ea745;
+  border-radius: 100%;
+  color: white;
+    
 }
 
 .leaderboard {
@@ -42,13 +53,14 @@ font-size: 5rem;
   width: 100%;
   margin: 1% 1%;
   padding: 2%;
-  background-color: white;
+  background-color:  #2ea745;
+  color: white;
 }
 
 img {
   max-width: 100%;
 }
 
-hiddenForm {
+/* .hiddenForm {
   visibility: hidden;
-}
+} */
