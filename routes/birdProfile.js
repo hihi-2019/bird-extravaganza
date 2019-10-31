@@ -5,7 +5,7 @@ router.get('/:id', (req, res) => {
   // let data = {
   //   birdData: birdData
   // }
-  res.send('this is a standin for a birds profile')
+  res.render('birdProfile')
 })
 
 module.exports = router;

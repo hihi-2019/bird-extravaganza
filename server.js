@@ -15,7 +15,7 @@ server.use(express.urlencoded({extended: false})) //this lets us access form dat
 server.use('/birdProfile', birdProfile)
 
 server.get('/', (req, res) => {
-  res.send('This is a standin for the homepage hbs file')
+  res.render('birdIndex',{})
   })
 
 server.get('/birdProfile', (req, res) => {
