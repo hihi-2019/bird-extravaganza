@@ -3,13 +3,19 @@
 </div>
 
 <div class="container">
-  {{#each birds}}
-  <article class="birdcard">
-    <a href="birdProfile/{{bird_id}}" ><img src="/images/{{image}}"a
-    lt="picture of a bird"></a>
-    <h4>Votes: {{votes}}</h4>
-  </article>
-  {{/each}}
+  <div class="row row-eq-height">
+    {{#each birds}}
+    <div class="col-sm-3 mb-3">
+    <article class="card birdcard">
+      <a href="birdProfile/{{bird_id}}" ><img src="/images/{{image}}"a
+      lt="picture of a bird"></a>
+      <div class="votes">
+        <h4>Votes: {{votes}}</h4>
+      </div>
+    </article>
+    </div>
+    {{/each}}
+    </div>
 </div>
 
 

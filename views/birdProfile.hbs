@@ -1,6 +1,8 @@
-<div class="card birdcard">
-  <h2>Check out the {{bird_name}}</h2>
-  {{!-- <img src="/image/{{image}}" alt="a picture of a bird"> --}}
+<div class="header">
+  <h1>Check out the {{bird_name}}</h1>
+</div>
+<div class="card profilecard">
+  
   <img src="/images/{{image}}">
   <div class="card-body">
     <h5 class="card-title">Bird Blurb:</h5>
@@ -14,14 +16,15 @@
   </div>
 </div>
 
-<form class="hiddenForm card birdcard" action="/addvoter" method="POST">
+<form class="hiddenForm card profilecard" action="/addvoter" method="POST">
   <h2>Vote for the {{bird_name}}</h2>
+  <br>
   <p>
-    Your Name: <input type="text">
+    Your Name:  <input type="text">
   </p>
   <p>
     Reason: <input type="text">
   </p>
   
-  <button class="btn btn-success" name="birdVote" type="submit">Vote for the {{bird_name}}!</submit>
+  <button class="btn btn-outline-light" name="birdVote" type="submit">Vote for the {{bird_name}}!</submit>
 </form>
