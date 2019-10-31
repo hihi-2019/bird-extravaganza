@@ -1,0 +1,26 @@
+{
+  "name": "bird-extravaganza",
+  "version": "1.0.0",
+  "description": "Week 2 group project Caitlin Freya Alice Bas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hihi-2019/bird-extravaganza.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hihi-2019/bird-extravaganza/issues"
+  },
+  "homepage": "https://github.com/hihi-2019/bird-extravaganza#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "knex": "^0.20.1",
+    "nodemon": "^1.19.4",
+    "sqlite3": "^4.1.0"
+  }
+}
