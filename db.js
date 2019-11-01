@@ -11,7 +11,26 @@ function getBirds(db = database){
     return db('bird').select()
 }
 
+// function orderVotes(birdData) {
+//   let sortedVotes = birdData.birds
+
+//   sortedVotes.sort(function(a, b) {
+//     return b.votes - a.votes
+//   })
+
+//   // birdData.sortedVotes = sortedVotes
+
+//   return sortedVotes
+// }
+
+// -----OR THIS------------
+
+function orderVotes(db = database) {
+return db('bird').orderBy("votes", "desc")
+}
+
 module.exports = {
-    getBird, 
-    getBirds, 
+  getBird,
+  getBirds,
+  orderVotes,
 }

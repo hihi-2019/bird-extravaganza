@@ -9,15 +9,25 @@ router.get('/:id', (req, res) => {
   db.getBird(id)
   .then(data => {
       
-      console.log(data[0].bird_name)
+      // console.log(data[0].bird_name)
       res.render('birdProfile', data[0])
     })
-    
 })
   // // let data = {
   // //   birdData: birdData
   // // }
   // res.render('birdProfile')
+
+router.get('/voter', (req, res) => {
+  // console.log(req.body)
+})
+
+
+router.post('/:id/voter', (req, res) => {
+  console.log("new voter", req.body)
+ 
+})
+
 
 
 module.exports = router;

@@ -1,11 +1,17 @@
 const express = require('express')
 const router = express.Router()
+const db = require('../db')
 
 router.get('/', (req, res) => {
-  // let data = {
-  //   bird names and votes sorted by vote number
-  // }
-  res.render('leaderboard',{})
+ db.orderVotes().then(birds => {
+   const data = {
+     birds: birds
+   }
+  //  db.orderVotes()
+   res.render('leaderboard', data)
+ })
 })
+
+
 
 module.exports = router;
