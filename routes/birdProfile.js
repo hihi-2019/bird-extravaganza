@@ -24,7 +24,21 @@ router.get('/voter', (req, res) => {
 
 
 router.post('/:id/voter', (req, res) => {
-  console.log("new voter", req.body)
+
+  let voterName = req.body.name
+  let quote = req.body.quote
+  let birdVote = req.body.birdVote
+   let newVoter = {
+     voter_bird_id: birdVote,
+     voter_name: voterName,
+     quote: quote,
+   }
+   
+   db.newVoter(newVoter).then(() => {
+     res.redirect('/voterProfile')
+   })
+
+
  
 })
 
