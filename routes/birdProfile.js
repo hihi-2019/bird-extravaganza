@@ -24,23 +24,27 @@ router.get('/voter', (req, res) => {
 
 
 router.post('/:id/voter', (req, res) => {
+    let voterName = req.body.name
+    let quote = req.body.quote
+    let birdVote = req.body.birdVote
+    let newVoter = {
+      voter_bird_id: birdVote,
+      voter_name: voterName,
+      quote: quote
+    }
 
-  let voterName = req.body.name
-  let quote = req.body.quote
-  let birdVote = req.body.birdVote
-   let newVoter = {
-     voter_bird_id: birdVote,
-     voter_name: voterName,
-     quote: quote,
-   }
-   
-   db.newVoter(newVoter).then(() => {
-     res.redirect('/voterProfile')
-   })
+    db.newVoter(newVoter)
+      .then(() => db.getVotes())
+      .then( allVotes => 
+        db.addUpVotes(newVoter.voter_bird_id, allVotes))
+      //  .then(db.addUpVotes(voteId))
+      .then(() => {
+        res.redirect('/voterProfile')
+      })
+  })
 
 
- 
-})
+
 
 
 

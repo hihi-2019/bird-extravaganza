@@ -33,10 +33,27 @@ function newVoter(voter, db = database){
   return db('voter').insert(voter)
 }
 
+function getVotes(db = database) {
+  return db('bird')
+    .join('voter', 'bird_id', 'voter_bird_id')
+    .select()
+}
+
+function addUpVotes(birdId, allVotes, db = database) {
+
+  let voteList = allVotes.filter(vote => {
+    return vote.voter_bird_id == birdId
+  })
+  console.log(birdId, "this is the bird id", voteList, "and vote list", allVotes)
+  return db('bird').update({votes:voteList.length}).where({bird_id: birdId}).debug()
+}
+
 
 module.exports = {
   getBird,
   getBirds,
   orderVotes,
   newVoter,
+  getVotes,
+  addUpVotes,
 }
