@@ -5,7 +5,7 @@ router.get('/', (req, res) => {
   // let data = {
   //   birdData: birdData
   // }
-  res.render('voterProfile')
+  res.render('voterProfile', {})
 })
 
 module.exports = router;
