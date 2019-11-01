@@ -5,12 +5,12 @@
 
    <div class="card leaderboardCard">
       {{#each voter}}
-      <h1>Name: {{voter_name}}</h1>
+      <h2>Name: {{voter_name}}</h2>
       <p>
-      Voted for: {{voter_bird_id}}
+      <strong>Voted for:</strong> {{voter_bird_id}}
       </p>
       <p>
-         Reason: {{quote}}
+         <strong>Reason:</strong> {{quote}}
       </p>
       <p>---</p>
       {{/each}}
