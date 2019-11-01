@@ -16,15 +16,19 @@
   </div>
 </div>
 
-<form class="hiddenForm card profilecard" action="/addvoter" method="POST">
+<form class="hiddenForm card birdcard" action="{{bird_id}}/voter" method="POST">
   <h2>Vote for the {{bird_name}}</h2>
   <br>
   <p>
-    Your Name:  <input type="text">
+    Your Name: <input type="text" name="name">
   </p>
   <p>
-    Reason: <input type="text">
+    Reason: <input type="text" name="quote">
   </p>
   
-  <button class="btn btn-outline-light" name="birdVote" type="submit">Vote for the {{bird_name}}!</submit>
+  <button type="submit" class="btn btn-success" name="birdVote" value={{bird_id}}>Vote for the {{bird_name}}!</button>
 </form>
+
+
+
+
