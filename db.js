@@ -29,8 +29,14 @@ function orderVotes(db = database) {
 return db('bird').orderBy("votes", "desc")
 }
 
+function newVoter(voter, db = database){
+  return db('voter').insert(voter)
+}
+
+
 module.exports = {
   getBird,
   getBirds,
   orderVotes,
+  newVoter,
 }
