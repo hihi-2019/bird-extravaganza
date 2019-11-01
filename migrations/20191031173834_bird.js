@@ -4,7 +4,7 @@ exports.up = function(knex) {
     table.increments('bird_id').primary()
     table.string('bird_name')
     table.integer('votes')
-    table.string('blurb')
+    table.text('blurb')
     table.string('image')
   })
 };
